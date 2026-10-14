@@ -1,0 +1,15 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Mêmes limites pour PHP en module Apache (sans effet, et sans erreur, ailleurs)
+<IfModule mod_php.c>
+  php_value upload_max_filesize 10M
+  php_value post_max_size 12M
+</IfModule>
+<IfModule mod_php8.c>
+  php_value upload_max_filesize 10M
+  php_value post_max_size 12M
+</IfModule>

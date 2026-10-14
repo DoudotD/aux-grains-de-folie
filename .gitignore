@@ -1,0 +1,13 @@
+# Données de production : comptes, actualités, clé d'installation (ne jamais versionner)
+/data/*
+!/data/.htaccess
+!/data/.gitkeep
+
+# Images envoyées via l'espace de gestion
+/uploads/*
+!/uploads/.htaccess
+!/uploads/.gitkeep
+
+# Outils locaux
+.claude/
+.DS_Store
